@@ -1,0 +1,146 @@
+:root{
+    --nav: #4f388b;
+    --nav-tex: #dfe3ea;
+    --text: var(--nav-tex);
+    --background: #121f3d;
+    --player-score: var(--nav);
+    --contrast-color: #98ca3f;
+    --contrast-color-plus: #95e706;
+    --result-text : red;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    background-color: var(--background);
+}
+.nav{
+    background-color: var(--nav);
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.nav__link{
+    margin: 0.7rem;
+    text-decoration: none;
+    color: var(--nav-tex)
+}
+.nav__link:hover{
+    font-size:1.8rem   ;
+    text-decoration: underline;
+}
+
+.title{
+    font-size: 2.4rem;
+    font-weight: bolder;
+    color: var(--text);
+}
+
+.header-info{
+    margin: 0.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.header-info__description{
+    font-size: 1.8rem;
+    color: var(--text);
+}
+.game{
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.game__result{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: var(--result-text);
+    border-bottom: solid 0.2rem var(--result-text);
+}
+.game__scores{
+    display: flex;
+    color: var(--text);
+    padding: 0.2rem;
+}
+.game__player{
+    width: 8rem;
+    height: 5rem;
+    background-color: var(--player-score);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.game__subtitle{
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--text);
+    margin: 0.5rem;
+}
+
+.game__rule{
+    font-size: 1.4rem;
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 0.2rem;
+    color: var(--text);
+}
+.game__selected-options{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+.game__selected-option{
+    width: 6rem;
+    color: var(--text);
+    background-color: var(--text);
+    border-radius: 3rem;
+    border: solid  0.5rem;
+}
+.game__vs{
+    width: 4rem;
+    height: 2rem;
+}
+
+.game__player-options{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.option2play{
+    width: 6.5rem;
+    margin: 0.5rem;
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--contrast-color);
+    justify-content: center;
+    border-radius: 2rem;
+}
+.option2play:hover{
+    width: 7rem;
+    background-color: var(--contrast-color-plus);
+}
+.option2play__text{
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button{
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: var(--contrast-color);
+    border-radius: 1rem;
+}
+.button:hover{
+    background-color: var(--contrast-color-plus);
+}

@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="/rock-paper-scissors/styles/basic.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="https://github.com/cristiancaer" class="nav__link">Home</a>
+            <a href="" class="nav__link">Github</a>
+        </nav>
+
+        <section class="header-info">
+            <h1 class=" title header-info__title"> Game</h1>
+            <p class="header-info__description"> Rock paper and scissors</p>
+        </section>
+    </header>
+    <main>
+        <div class="game">
+            <button class="button" onclick="showRules()"> Show Description</button>
+            <section id="game__description" class="game__description" hidden>
+                <h3 class="game__subtitle">How To Play The Game (It's Very Simple): </h3>
+                <img src="/rock-paper-scissors/img/SVG/RPSLS_Arrows.svg" alt="how to play">                   
+                    <ul class="game__rules">
+                        <li class="game__rule">
+                            Scissors cuts Paper (✌ > ✋)
+                        </li>
+                        <li class="game__rule">
+                            Paper covers Rock (✋ > ✊)
+                        </li>
+                        <li class="game__rule">
+                            Rock crushes Lizard (✊ > 🦎)
+                        </li>
+                        <li class="game__rule">
+                            Lizard poisons Spock (🦎 > 🖖)
+                        </li>
+                        <li class="game__rule">
+                            Spock smashes Scissors (🖖 > ✌)
+                        </li>
+                        <li class="game__rule">
+                            Scissors decapitates Lizard (✌ >
+                        </li>
+                        <li class="game__rule">
+                            Lizard eats Paper (🦎 > ✋)
+                        </li>
+                        <li class="game__rule">
+                            Paper disproves Spock (✋ > 🖖)
+                        </li>
+                        <li class="game__rule">
+                            Spock vaproizes Rock (🖖 > ✊)
+                        </li>
+                        <li class="game__rule">
+                            Rock crushes Scissors (✊ > ✌)
+                        </li>
+
+                    </ul>
+
+            </section>
+            <section id="game__result" class="game__result">you win</section>
+            <section class="game__scores">
+                <div class="game__player" >
+                    <h1 class="game__player-name"> Computer</h1>
+                    <h2 class="game__player-score" id="game__computer-score">0</h2>
+                </div>
+                <div class="game__player" >
+                    <h1 class="game__player-name"> Player</h1>
+                    <h2 class="game__player-score" id="game__player-score">0</h2>
+                </div>
+            </section>
+
+            <section class="game__battlefield">
+                <h1 class="game__subtitle">Battlefield</h1>
+                <div class="game__selected-options">
+                    <img id="game__computer-option" src="/rock-paper-scissors/img/SVG/scissors.svg" alt="computer option selected" class="game__selected-option">
+                    <img  src="/rock-paper-scissors/img/SVG/vs.svg" alt="computer selected option" class="game__vs">
+                    <img id="game__player-option" src="/rock-paper-scissors/img/SVG/scissors.svg" alt="player option selected" class="game__selected-option">
+                </div>
+            </section>
+
+            <h1 class="game__subtitle">Chose wisely one</h1>
+            <section class="game__player-options">
+                <div class="option2play" onclick="playGame(this)" data-value="rock">
+                    <img id='game__option-rock' src="/rock-paper-scissors/img/SVG/rock.svg" alt="rock" class="option2play__img">
+                    <p class="option2play__text">press j</p>
+                </div>
+                <div class="option2play" onclick="playGame(this)" data-value="paper">
+                    <img id='game__option-paper' src="/rock-paper-scissors/img/SVG/paper.svg" alt="paper" class="option2play__img">
+                    <p class="option2play__text">press k</p>
+                </div>
+                <div class="option2play" onclick="playGame(this)" data-value="scissors">
+                    <img id='game__option-scissors' src="/rock-paper-scissors/img/SVG/scissors.svg" alt="scissors" class="option2play__img">
+                    <p class="option2play__text">press l</p>
+                </div>
+                <div class="option2play" onclick="playGame(this)" data-value="lizard">
+                    <img id='game__option-lizard' src="/rock-paper-scissors/img/SVG/lizard.svg" alt="lizard" class="option2play__img">
+                    <p class="option2play__text">press m</p>
+                </div>
+                <div class="option2play" onclick="playGame(this)" data-value="spock">
+                    <img id='game__option-spock' src="/rock-paper-scissors/img/SVG/spock.svg" alt="spock" class="option2play__img">
+                    <p class="option2play__text">press n</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="/rock-paper-scissors/js/game.js"></script>
+    <script src="/rock-paper-scissors/js/main.js"></script>
+</body>
+</html>
